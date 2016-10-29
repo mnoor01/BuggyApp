@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Buggy App</string>
+    <string name="next_activity">Next Activity</string>
+    <string name="analyze_repeated_characters">Analyze Repeated Characters</string>
+    <string name="enter_a_word">Enter a word</string>
+    <string name="analyze_multiple_characters">Analyze Multiple Characters</string>
+    <string name="count_repeated_characters">Count repeated characters</string>
+</resources>
