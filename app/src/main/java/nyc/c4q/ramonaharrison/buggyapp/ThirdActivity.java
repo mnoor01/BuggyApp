@@ -44,9 +44,13 @@ public class ThirdActivity extends AppCompatActivity {
                 if (result == 0) {
                     resultDisplay.setText("No multiple character.");
                 } else {
-                    resultDisplay.setText("First multiple character = " + result);
+                    resultDisplay.setText("First multiple character = " + wordAnalyzer.firstRepeatedCharacter(wordInput.toString()));
                 }
             }
         });
     }
 }
+
+
+
+

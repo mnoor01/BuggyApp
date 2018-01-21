@@ -19,10 +19,11 @@ public class WordAnalyzer {
      * @return the first repeated character, or 0 if none found
      */
     public char firstRepeatedCharacter(String word) {
-        for (int i = 0; i < word.length(); i++) {
-            char ch = word.charAt(i);
-            if (ch == word.charAt(i + 1))
+        for (int i = 0; i < word.length()-1; i++) {
+             char ch = word.charAt(i);
+            if (ch == word.charAt(i + 1)) {
                 return ch;
+            }
         }
         return 0;
     }
@@ -61,10 +62,9 @@ public class WordAnalyzer {
     public int countRepeatedCharacters(String word) {
         int c = 0;
         for (int i = 1; i < word.length() - 1; i++) {
-            if (word.charAt(i) == word.charAt(i + 1)) {
-                if (word.charAt(i - 1) != word.charAt(i)) {
+            if (word.charAt(i) == word.charAt(i + 1)&&(word.charAt(i - 1) != word.charAt(i))) {
                     c++;
-                }
+
             }
         }
         return c;
